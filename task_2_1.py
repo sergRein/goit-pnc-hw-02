@@ -56,10 +56,10 @@ if __name__ == '__main__':
     with open('encrypted_text_2_1.txt', "w") as file:
         file.write(chipertext)
     
-    print(f"Encrypted text: {chipertext}")
+    print(f"Encrypted text: {chipertext}\n")
 
     decrypted_text = decrypt(chipertext, key)
-    print(f"Decrypted text: {decrypted_text}")
+    print(f"Decrypted text: {decrypted_text}\n")
 
     if(plaintext == decrypted_text):
         print("Texts are the same")

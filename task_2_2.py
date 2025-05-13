@@ -48,19 +48,19 @@ if __name__ == '__main__':
    # plaintext = "this is a test"
 
     ciphertext = encrypt(plaintext, key)
-    print(f"Encrypted text 1: {ciphertext}")
+    print(f"Encrypted text 1: {ciphertext}\n")
 
     ciphertext1 = encrypt_row_transposition(ciphertext, key1)
-    print(f"Encrypted text 2: {ciphertext1}")
+    print(f"Encrypted text 2: {ciphertext1}\n")
     with open('encrypted_text_2_2.txt', "w") as file:
         file.write(ciphertext1)
 
 
     decrypted_text = decrypt_row_transposition(ciphertext1, key1)
-    print(f"Decrypted text: {decrypted_text}")
+    print(f"Decrypted text1: {decrypted_text}\n")
 
     decrypted_text = decrypt(decrypted_text, key)
-    print(f"Decrypted text: {decrypted_text}")
+    print(f"Decrypted text: {decrypted_text}\n")
 
     if plaintext == decrypted_text:
         print("Texts are the same")

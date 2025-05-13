@@ -44,6 +44,5 @@ if __name__ == '__main__':
     with open('encrypted_text_3_1.txt', "w") as file:
         file.write(encrypted_text)
 
-    print(f"Original text: {plaintext}")
-    print(f"Encrypted text: {encrypted_text}")
+    print(f"Encrypted text: {encrypted_text}\n")
     print(f"Decrypted text: {decrypted_text}")

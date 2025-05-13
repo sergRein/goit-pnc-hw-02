@@ -42,12 +42,17 @@ if __name__ == '__main__':
     with open('text.txt', "r") as file:
         plaintext = file.read()
     
-    
     ciphertext = encrypt_vigenere(plaintext, key)
     with open('encrypted_text_1_1.txt', "w") as file:
         file.write(ciphertext)
 
     decrypted_text = decrypt_vigenere(ciphertext, key)
+
+    print(f"Original text: {plaintext}\n")
+    print(f"Encrypted text: {ciphertext}\n")
+    print(f"Decrypted text: {decrypted_text}\n")
+
+
     if plaintext == decrypted_text:
         print("Texts are the same")
     else:

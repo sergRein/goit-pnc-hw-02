@@ -10,9 +10,12 @@ if __name__ == '__main__':
     decrypted_text1 = decrypt(encrypted_text1,key)
     decrypted_text = decrypt_vigenere(decrypted_text1, key)
 
-    print(f"Original text: {plaintext}")
-    print(f"Encrypted text: {encrypted_text}")
+
+    print(f"Encrypted text: {encrypted_text}\n")
+    print(f"Encrypted text1: {encrypted_text1}\n")
+    print(f"Decrypted text1: {decrypted_text1}\n")
     print(f"Decrypted text: {decrypted_text}")
+
 
     with open('encrypted_text_3_2.txt', "w") as file:
         file.write(encrypted_text1)
